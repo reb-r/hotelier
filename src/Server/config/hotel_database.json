@@ -1,0 +1,2412 @@
+[
+    {
+        "id" : 10001,
+        "name" : "Hotel Ancona 3",
+        "address" : "Largo Augusto 112",
+        "city" : "Ancona",
+        "type" : "3 stelle",
+        "phone" : "071-2797003",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Ancona.",
+        "features" : [
+            "Palestra",
+            "Piscina al chiuso",
+            "TV in camera",
+            "Sauna",
+            "Cancellazione gratuita",
+            "Wi-Fi",
+            "Colazione inclusa",
+            "Parcheggio gratuito",
+            "Ristorante",
+            "Centro benessere",
+            "Pagamento in struttura"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 10002,
+        "name" : "Hotel Ancona 4",
+        "address" : "Viale dei Giardini 398",
+        "city" : "Ancona",
+        "type" : "4 stelle",
+        "phone" : "071-2306130",
+        "description" : "Un hotel storico situato nel centro di Ancona.",
+        "features" : [
+            "Sauna",
+            "Cancellazione gratuita",
+            "Frigo in camera",
+            "Ristorante",
+            "Palestra",
+            "Pagamento in struttura"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 10003,
+        "name" : "Hotel Ancona 4S",
+        "address" : "Via Roma 474",
+        "city" : "Ancona",
+        "type" : "4 stelle superior",
+        "phone" : "071-9175053",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Ancona.",
+        "features" : [
+            "Sauna",
+            "Wi-Fi",
+            "Aria condizionata",
+            "Palestra",
+            "Ristorante",
+            "Centro benessere",
+            "Pagamento in struttura",
+            "Frigo in camera",
+            "Parcheggio gratuito",
+            "TV in camera",
+            "Cancellazione gratuita",
+            "Colazione inclusa"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 10004,
+        "name" : "Hotel Ancona 5",
+        "address" : "Corso Ateneo 229",
+        "city" : "Ancona",
+        "type" : "5 stelle",
+        "phone" : "071-1021124",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Ancona.",
+        "features" : [
+            "Ristorante",
+            "TV in camera",
+            "Sauna"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 10005,
+        "name" : "Hotel Ancona 5S",
+        "address" : "Viale Traiano 107",
+        "city" : "Ancona",
+        "type" : "5 stelle superior",
+        "phone" : "071-4445746",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Ancona.",
+        "features" : [
+            "Wi-Fi",
+            "Cancellazione gratuita",
+            "Sauna",
+            "Colazione inclusa",
+            "Parcheggio gratuito",
+            "Frigo in camera",
+            "Aria condizionata",
+            "Centro benessere",
+            "Palestra",
+            "TV in camera",
+            "Ristorante",
+            "Piscina al chiuso"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 20006,
+        "name" : "Hotel Aosta 3",
+        "address" : "Viale Vesuvio 186",
+        "city" : "Aosta",
+        "type" : "3 stelle",
+        "phone" : "0165-374255",
+        "description" : "Un hotel elegante nei pressi di Aosta.",
+        "features" : [
+            "Palestra",
+            "Piscina al chiuso",
+            "Colazione inclusa",
+            "Aria condizionata",
+            "Cancellazione gratuita",
+            "Wi-Fi",
+            "Parcheggio gratuito",
+            "TV in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 20007,
+        "name" : "Hotel Aosta 4",
+        "address" : "Via Verdi 809",
+        "city" : "Aosta",
+        "type" : "4 stelle",
+        "phone" : "0165-761695",
+        "description" : "Un hotel moderno con vista mozzafiato a Aosta.",
+        "features" : [
+            "Palestra",
+            "TV in camera",
+            "Aria condizionata",
+            "Piscina al chiuso",
+            "Frigo in camera",
+            "Colazione inclusa",
+            "Pagamento in struttura",
+            "Wi-Fi",
+            "Ristorante",
+            "Parcheggio gratuito"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 20008,
+        "name" : "Hotel Aosta 4S",
+        "address" : "Piazza Dante 241",
+        "city" : "Aosta",
+        "type" : "4 stelle superior",
+        "phone" : "0165-590354",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Aosta.",
+        "features" : [
+            "Ristorante",
+            "Wi-Fi",
+            "TV in camera",
+            "Parcheggio gratuito",
+            "Pagamento in struttura",
+            "Piscina al chiuso",
+            "Palestra"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 20009,
+        "name" : "Hotel Aosta 5",
+        "address" : "Viale Vesuvio 896",
+        "city" : "Aosta",
+        "type" : "5 stelle",
+        "phone" : "0165-824520",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Aosta.",
+        "features" : [
+            "Wi-Fi",
+            "Colazione inclusa",
+            "TV in camera",
+            "Frigo in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 20010,
+        "name" : "Hotel Aosta 5S",
+        "address" : "Viale dei Giardini 140",
+        "city" : "Aosta",
+        "type" : "5 stelle superior",
+        "phone" : "0165-970276",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Aosta.",
+        "features" : [
+            "Aria condizionata",
+            "TV in camera",
+            "Pagamento in struttura",
+            "Palestra",
+            "Sauna",
+            "Centro benessere",
+            "Parcheggio gratuito",
+            "Wi-Fi",
+            "Cancellazione gratuita",
+            "Colazione inclusa"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 30011,
+        "name" : "Hotel Bari 3",
+        "address" : "Largo Colombo 128",
+        "city" : "Bari",
+        "type" : "3 stelle",
+        "phone" : "080-4368589",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Bari.",
+        "features" : [
+            "Cancellazione gratuita",
+            "Frigo in camera",
+            "Piscina al chiuso",
+            "Ristorante",
+            "Palestra",
+            "Wi-Fi",
+            "Sauna",
+            "Parcheggio gratuito"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 30012,
+        "name" : "Hotel Bari 4",
+        "address" : "Viale Vesuvio 805",
+        "city" : "Bari",
+        "type" : "4 stelle",
+        "phone" : "080-9479285",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Bari.",
+        "features" : [
+            "Piscina al chiuso"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 30013,
+        "name" : "Hotel Bari 4S",
+        "address" : "Corso Ateneo 153",
+        "city" : "Bari",
+        "type" : "4 stelle superior",
+        "phone" : "080-0990406",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Bari.",
+        "features" : [
+            "Cancellazione gratuita",
+            "Colazione inclusa",
+            "Ristorante",
+            "Piscina al chiuso",
+            "Parcheggio gratuito"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 30014,
+        "name" : "Hotel Bari 5",
+        "address" : "Viale dei Giardini 715",
+        "city" : "Bari",
+        "type" : "5 stelle",
+        "phone" : "080-6145319",
+        "description" : "Un hotel moderno con vista mozzafiato a Bari.",
+        "features" : [
+            "Wi-Fi",
+            "Parcheggio gratuito",
+            "Centro benessere",
+            "Aria condizionata"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 30015,
+        "name" : "Hotel Bari 5S",
+        "address" : "Piazza Giulio Cesare 647",
+        "city" : "Bari",
+        "type" : "5 stelle superior",
+        "phone" : "080-5503820",
+        "description" : "Un hotel elegante nei pressi di Bari.",
+        "features" : [
+            "Frigo in camera",
+            "TV in camera",
+            "Aria condizionata",
+            "Ristorante",
+            "Palestra",
+            "Colazione inclusa",
+            "Centro benessere",
+            "Pagamento in struttura",
+            "Parcheggio gratuito"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 40016,
+        "name" : "Hotel Bologna 3",
+        "address" : "Corso Magellano 245",
+        "city" : "Bologna",
+        "type" : "3 stelle",
+        "phone" : "051-8040524",
+        "description" : "Un hotel storico situato nel centro di Bologna.",
+        "features" : [
+            "Frigo in camera",
+            "Cancellazione gratuita",
+            "Wi-Fi",
+            "Centro benessere",
+            "Colazione inclusa",
+            "Piscina al chiuso",
+            "Sauna"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 40017,
+        "name" : "Hotel Bologna 4",
+        "address" : "Via Roma 753",
+        "city" : "Bologna",
+        "type" : "4 stelle",
+        "phone" : "051-9055297",
+        "description" : "Un hotel moderno con vista mozzafiato a Bologna.",
+        "features" : [
+            "Sauna",
+            "Frigo in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 40018,
+        "name" : "Hotel Bologna 4S",
+        "address" : "Via Accademia 724",
+        "city" : "Bologna",
+        "type" : "4 stelle superior",
+        "phone" : "051-3021493",
+        "description" : "Un hotel elegante nei pressi di Bologna.",
+        "features" : [
+            "Frigo in camera",
+            "Parcheggio gratuito",
+            "Centro benessere",
+            "Sauna",
+            "Palestra",
+            "Colazione inclusa",
+            "Piscina al chiuso",
+            "Pagamento in struttura",
+            "Wi-Fi",
+            "Aria condizionata",
+            "Cancellazione gratuita",
+            "Ristorante"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 40019,
+        "name" : "Hotel Bologna 5",
+        "address" : "Largo Augusto 654",
+        "city" : "Bologna",
+        "type" : "5 stelle",
+        "phone" : "051-3455749",
+        "description" : "Un hotel moderno con vista mozzafiato a Bologna.",
+        "features" : [
+            "Wi-Fi",
+            "Cancellazione gratuita",
+            "Centro benessere",
+            "Sauna",
+            "Colazione inclusa",
+            "Aria condizionata",
+            "Frigo in camera",
+            "Piscina al chiuso",
+            "TV in camera",
+            "Pagamento in struttura",
+            "Ristorante"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 40020,
+        "name" : "Hotel Bologna 5S",
+        "address" : "Bastioni Gran Sasso 271",
+        "city" : "Bologna",
+        "type" : "5 stelle superior",
+        "phone" : "051-7862699",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Bologna.",
+        "features" : [ ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 50021,
+        "name" : "Hotel Cagliari 3",
+        "address" : "Via Verdi 761",
+        "city" : "Cagliari",
+        "type" : "3 stelle",
+        "phone" : "070-6960928",
+        "description" : "Un hotel elegante nei pressi di Cagliari.",
+        "features" : [
+            "Palestra"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 50022,
+        "name" : "Hotel Cagliari 4",
+        "address" : "Largo Colombo 626",
+        "city" : "Cagliari",
+        "type" : "4 stelle",
+        "phone" : "070-2381053",
+        "description" : "Un hotel moderno con vista mozzafiato a Cagliari.",
+        "features" : [
+            "Cancellazione gratuita",
+            "Wi-Fi",
+            "TV in camera",
+            "Ristorante"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 50023,
+        "name" : "Hotel Cagliari 4S",
+        "address" : "Via Marco Polo 754",
+        "city" : "Cagliari",
+        "type" : "4 stelle superior",
+        "phone" : "070-6333672",
+        "description" : "Un hotel elegante nei pressi di Cagliari.",
+        "features" : [
+            "TV in camera",
+            "Parcheggio gratuito",
+            "Pagamento in struttura",
+            "Ristorante",
+            "Centro benessere",
+            "Colazione inclusa",
+            "Aria condizionata",
+            "Cancellazione gratuita",
+            "Palestra",
+            "Piscina al chiuso",
+            "Sauna",
+            "Wi-Fi"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 50024,
+        "name" : "Hotel Cagliari 5",
+        "address" : "Piazza Giulio Cesare 634",
+        "city" : "Cagliari",
+        "type" : "5 stelle",
+        "phone" : "070-5252468",
+        "description" : "Un hotel elegante nei pressi di Cagliari.",
+        "features" : [
+            "Pagamento in struttura",
+            "Frigo in camera",
+            "Wi-Fi",
+            "Piscina al chiuso",
+            "Parcheggio gratuito",
+            "Centro benessere"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 50025,
+        "name" : "Hotel Cagliari 5S",
+        "address" : "Piazza Università 317",
+        "city" : "Cagliari",
+        "type" : "5 stelle superior",
+        "phone" : "070-0896753",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Cagliari.",
+        "features" : [
+            "Wi-Fi",
+            "Parcheggio gratuito",
+            "TV in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 60026,
+        "name" : "Hotel Campobasso 3",
+        "address" : "Vicolo Corto 835",
+        "city" : "Campobasso",
+        "type" : "3 stelle",
+        "phone" : "0874-975764",
+        "description" : "Un hotel storico situato nel centro di Campobasso.",
+        "features" : [
+            "Ristorante",
+            "Parcheggio gratuito",
+            "Pagamento in struttura"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 60027,
+        "name" : "Hotel Campobasso 4",
+        "address" : "Viale Costantino 394",
+        "city" : "Campobasso",
+        "type" : "4 stelle",
+        "phone" : "0874-271361",
+        "description" : "Un hotel storico situato nel centro di Campobasso.",
+        "features" : [
+            "Wi-Fi",
+            "Centro benessere",
+            "Pagamento in struttura",
+            "TV in camera",
+            "Piscina al chiuso",
+            "Cancellazione gratuita"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 60028,
+        "name" : "Hotel Campobasso 4S",
+        "address" : "Piazza Dante 775",
+        "city" : "Campobasso",
+        "type" : "4 stelle superior",
+        "phone" : "0874-288262",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Campobasso.",
+        "features" : [
+            "Pagamento in struttura",
+            "Frigo in camera",
+            "Sauna",
+            "Parcheggio gratuito"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 60029,
+        "name" : "Hotel Campobasso 5",
+        "address" : "Bastioni Gran Sasso 279",
+        "city" : "Campobasso",
+        "type" : "5 stelle",
+        "phone" : "0874-794398",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Campobasso.",
+        "features" : [
+            "Pagamento in struttura",
+            "Piscina al chiuso",
+            "Palestra",
+            "Parcheggio gratuito",
+            "Frigo in camera",
+            "Wi-Fi",
+            "Centro benessere",
+            "TV in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 60030,
+        "name" : "Hotel Campobasso 5S",
+        "address" : "Via Verdi 941",
+        "city" : "Campobasso",
+        "type" : "5 stelle superior",
+        "phone" : "0874-662705",
+        "description" : "Un hotel storico situato nel centro di Campobasso.",
+        "features" : [
+            "Ristorante"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 70031,
+        "name" : "Hotel Catanzaro 3",
+        "address" : "Viale dei Giardini 637",
+        "city" : "Catanzaro",
+        "type" : "3 stelle",
+        "phone" : "0961-914954",
+        "description" : "Un hotel moderno con vista mozzafiato a Catanzaro.",
+        "features" : [
+            "Ristorante",
+            "Frigo in camera",
+            "Cancellazione gratuita",
+            "Parcheggio gratuito",
+            "TV in camera",
+            "Wi-Fi",
+            "Palestra",
+            "Aria condizionata"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 70032,
+        "name" : "Hotel Catanzaro 4",
+        "address" : "Corso Impero 1",
+        "city" : "Catanzaro",
+        "type" : "4 stelle",
+        "phone" : "0961-571043",
+        "description" : "Un hotel moderno con vista mozzafiato a Catanzaro.",
+        "features" : [
+            "Cancellazione gratuita",
+            "Palestra",
+            "Piscina al chiuso",
+            "Aria condizionata"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 70033,
+        "name" : "Hotel Catanzaro 4S",
+        "address" : "Viale Costantino 30",
+        "city" : "Catanzaro",
+        "type" : "4 stelle superior",
+        "phone" : "0961-687534",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Catanzaro.",
+        "features" : [
+            "Frigo in camera",
+            "Sauna",
+            "Aria condizionata",
+            "TV in camera",
+            "Wi-Fi",
+            "Centro benessere",
+            "Piscina al chiuso",
+            "Pagamento in struttura",
+            "Ristorante",
+            "Palestra",
+            "Colazione inclusa",
+            "Cancellazione gratuita"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 70034,
+        "name" : "Hotel Catanzaro 5",
+        "address" : "Corso Magellano 675",
+        "city" : "Catanzaro",
+        "type" : "5 stelle",
+        "phone" : "0961-044084",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Catanzaro.",
+        "features" : [
+            "Ristorante",
+            "Wi-Fi",
+            "Cancellazione gratuita",
+            "Parcheggio gratuito",
+            "Aria condizionata",
+            "TV in camera",
+            "Piscina al chiuso",
+            "Colazione inclusa",
+            "Pagamento in struttura",
+            "Sauna",
+            "Frigo in camera",
+            "Centro benessere"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 70035,
+        "name" : "Hotel Catanzaro 5S",
+        "address" : "Viale dei Giardini 442",
+        "city" : "Catanzaro",
+        "type" : "5 stelle superior",
+        "phone" : "0961-403203",
+        "description" : "Un hotel storico situato nel centro di Catanzaro.",
+        "features" : [
+            "Cancellazione gratuita",
+            "Palestra",
+            "Ristorante",
+            "Parcheggio gratuito",
+            "Frigo in camera",
+            "Colazione inclusa",
+            "Piscina al chiuso",
+            "Centro benessere",
+            "Wi-Fi"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 80036,
+        "name" : "Hotel Firenze 3",
+        "address" : "Bastioni Gran Sasso 905",
+        "city" : "Firenze",
+        "type" : "3 stelle",
+        "phone" : "055-2815234",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Firenze.",
+        "features" : [
+            "Parcheggio gratuito",
+            "Pagamento in struttura",
+            "Frigo in camera",
+            "Wi-Fi",
+            "Centro benessere"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 80037,
+        "name" : "Hotel Firenze 4",
+        "address" : "Bastioni Gran Sasso 106",
+        "city" : "Firenze",
+        "type" : "4 stelle",
+        "phone" : "055-1624567",
+        "description" : "Un hotel moderno con vista mozzafiato a Firenze.",
+        "features" : [
+            "Palestra",
+            "Aria condizionata"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 80038,
+        "name" : "Hotel Firenze 4S",
+        "address" : "Viale Costantino 502",
+        "city" : "Firenze",
+        "type" : "4 stelle superior",
+        "phone" : "055-8397388",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Firenze.",
+        "features" : [
+            "Frigo in camera",
+            "Pagamento in struttura"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 80039,
+        "name" : "Hotel Firenze 5",
+        "address" : "Vicolo Corto 804",
+        "city" : "Firenze",
+        "type" : "5 stelle",
+        "phone" : "055-1119525",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Firenze.",
+        "features" : [
+            "Pagamento in struttura",
+            "Piscina al chiuso",
+            "Wi-Fi",
+            "Sauna",
+            "Colazione inclusa",
+            "Aria condizionata",
+            "Parcheggio gratuito",
+            "Frigo in camera",
+            "Centro benessere",
+            "Palestra",
+            "Cancellazione gratuita",
+            "TV in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 80040,
+        "name" : "Hotel Firenze 5S",
+        "address" : "Via Verdi 992",
+        "city" : "Firenze",
+        "type" : "5 stelle superior",
+        "phone" : "055-7395196",
+        "description" : "Un hotel elegante nei pressi di Firenze.",
+        "features" : [
+            "Aria condizionata",
+            "Centro benessere",
+            "Cancellazione gratuita",
+            "Pagamento in struttura",
+            "Piscina al chiuso",
+            "TV in camera",
+            "Wi-Fi"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 90041,
+        "name" : "Hotel Genova 3",
+        "address" : "Via Marco Polo 693",
+        "city" : "Genova",
+        "type" : "3 stelle",
+        "phone" : "010-7085245",
+        "description" : "Un hotel elegante nei pressi di Genova.",
+        "features" : [
+            "Aria condizionata",
+            "Sauna",
+            "Piscina al chiuso",
+            "Colazione inclusa",
+            "Parcheggio gratuito",
+            "Pagamento in struttura",
+            "Wi-Fi",
+            "Cancellazione gratuita",
+            "Centro benessere",
+            "Ristorante",
+            "Palestra"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 90042,
+        "name" : "Hotel Genova 4",
+        "address" : "Vicolo Corto 54",
+        "city" : "Genova",
+        "type" : "4 stelle",
+        "phone" : "010-7085596",
+        "description" : "Un hotel storico situato nel centro di Genova.",
+        "features" : [
+            "Frigo in camera",
+            "Palestra",
+            "Pagamento in struttura",
+            "Parcheggio gratuito",
+            "Colazione inclusa",
+            "Piscina al chiuso",
+            "Ristorante",
+            "Aria condizionata",
+            "Wi-Fi"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 90043,
+        "name" : "Hotel Genova 4S",
+        "address" : "Piazza Dante 61",
+        "city" : "Genova",
+        "type" : "4 stelle superior",
+        "phone" : "010-1703497",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Genova.",
+        "features" : [
+            "Centro benessere"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 90044,
+        "name" : "Hotel Genova 5",
+        "address" : "Corso Impero 122",
+        "city" : "Genova",
+        "type" : "5 stelle",
+        "phone" : "010-8946619",
+        "description" : "Un hotel storico situato nel centro di Genova.",
+        "features" : [
+            "Wi-Fi",
+            "Palestra",
+            "Colazione inclusa"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 90045,
+        "name" : "Hotel Genova 5S",
+        "address" : "Corso Magellano 473",
+        "city" : "Genova",
+        "type" : "5 stelle superior",
+        "phone" : "010-3948662",
+        "description" : "Un hotel storico situato nel centro di Genova.",
+        "features" : [
+            "Pagamento in struttura",
+            "TV in camera",
+            "Parcheggio gratuito",
+            "Frigo in camera",
+            "Colazione inclusa",
+            "Wi-Fi",
+            "Sauna",
+            "Aria condizionata",
+            "Centro benessere"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 10046,
+        "name" : "Hotel L'Aquila 3",
+        "address" : "Bastioni Gran Sasso 262",
+        "city" : "L'Aquila",
+        "type" : "3 stelle",
+        "phone" : "0862-129903",
+        "description" : "Un hotel moderno con vista mozzafiato a L'Aquila.",
+        "features" : [
+            "Centro benessere",
+            "Frigo in camera",
+            "Aria condizionata",
+            "Pagamento in struttura",
+            "TV in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 10047,
+        "name" : "Hotel L'Aquila 4",
+        "address" : "Bastioni Gran Sasso 542",
+        "city" : "L'Aquila",
+        "type" : "4 stelle",
+        "phone" : "0862-865899",
+        "description" : "Un hotel ristrutturato a due passi dal centro di L'Aquila.",
+        "features" : [ ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 10048,
+        "name" : "Hotel L'Aquila 4S",
+        "address" : "Piazza Università 715",
+        "city" : "L'Aquila",
+        "type" : "4 stelle superior",
+        "phone" : "0862-227450",
+        "description" : "Un hotel ristrutturato a due passi dal centro di L'Aquila.",
+        "features" : [
+            "Ristorante",
+            "Wi-Fi",
+            "Palestra",
+            "Sauna",
+            "TV in camera",
+            "Parcheggio gratuito",
+            "Frigo in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 10049,
+        "name" : "Hotel L'Aquila 5",
+        "address" : "Vicolo Stretto 820",
+        "city" : "L'Aquila",
+        "type" : "5 stelle",
+        "phone" : "0862-792144",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di L'Aquila.",
+        "features" : [
+            "Ristorante",
+            "Aria condizionata"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 10050,
+        "name" : "Hotel L'Aquila 5S",
+        "address" : "Corso Impero 240",
+        "city" : "L'Aquila",
+        "type" : "5 stelle superior",
+        "phone" : "0862-250560",
+        "description" : "Un hotel moderno con vista mozzafiato a L'Aquila.",
+        "features" : [
+            "Cancellazione gratuita",
+            "Colazione inclusa",
+            "Parcheggio gratuito",
+            "TV in camera",
+            "Wi-Fi",
+            "Palestra",
+            "Ristorante",
+            "Piscina al chiuso",
+            "Centro benessere",
+            "Pagamento in struttura"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 11051,
+        "name" : "Hotel Milano 3",
+        "address" : "Viale dei Giardini 449",
+        "city" : "Milano",
+        "type" : "3 stelle",
+        "phone" : "02-03588446",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Milano.",
+        "features" : [
+            "Parcheggio gratuito",
+            "TV in camera",
+            "Ristorante",
+            "Centro benessere",
+            "Piscina al chiuso",
+            "Cancellazione gratuita",
+            "Sauna",
+            "Palestra"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 11052,
+        "name" : "Hotel Milano 4",
+        "address" : "Corso Raffaello 458",
+        "city" : "Milano",
+        "type" : "4 stelle",
+        "phone" : "02-17453117",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Milano.",
+        "features" : [
+            "Parcheggio gratuito",
+            "Centro benessere",
+            "Sauna",
+            "Colazione inclusa"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 11053,
+        "name" : "Hotel Milano 4S",
+        "address" : "Via Roma 633",
+        "city" : "Milano",
+        "type" : "4 stelle superior",
+        "phone" : "02-14321578",
+        "description" : "Un hotel moderno con vista mozzafiato a Milano.",
+        "features" : [
+            "Wi-Fi",
+            "Palestra",
+            "Colazione inclusa",
+            "Piscina al chiuso",
+            "Centro benessere",
+            "Parcheggio gratuito",
+            "Pagamento in struttura",
+            "Ristorante",
+            "Frigo in camera",
+            "Sauna",
+            "Cancellazione gratuita",
+            "TV in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 11054,
+        "name" : "Hotel Milano 5",
+        "address" : "Via Accademia 313",
+        "city" : "Milano",
+        "type" : "5 stelle",
+        "phone" : "02-30130605",
+        "description" : "Un hotel elegante nei pressi di Milano.",
+        "features" : [
+            "Wi-Fi",
+            "Cancellazione gratuita",
+            "Piscina al chiuso",
+            "Palestra",
+            "Sauna",
+            "Frigo in camera",
+            "TV in camera",
+            "Ristorante",
+            "Pagamento in struttura",
+            "Aria condizionata",
+            "Centro benessere",
+            "Colazione inclusa"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 11055,
+        "name" : "Hotel Milano 5S",
+        "address" : "Corso Ateneo 760",
+        "city" : "Milano",
+        "type" : "5 stelle superior",
+        "phone" : "02-66107614",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Milano.",
+        "features" : [
+            "Colazione inclusa",
+            "Piscina al chiuso",
+            "TV in camera",
+            "Pagamento in struttura",
+            "Wi-Fi",
+            "Palestra",
+            "Frigo in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 12056,
+        "name" : "Hotel Napoli 3",
+        "address" : "Via Verdi 98",
+        "city" : "Napoli",
+        "type" : "3 stelle",
+        "phone" : "081-0466515",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Napoli.",
+        "features" : [
+            "Parcheggio gratuito",
+            "Palestra",
+            "Aria condizionata",
+            "Piscina al chiuso",
+            "Wi-Fi",
+            "Cancellazione gratuita",
+            "Sauna",
+            "Colazione inclusa",
+            "Centro benessere",
+            "Ristorante"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 12057,
+        "name" : "Hotel Napoli 4",
+        "address" : "Viale Vesuvio 399",
+        "city" : "Napoli",
+        "type" : "4 stelle",
+        "phone" : "081-7922794",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Napoli.",
+        "features" : [
+            "Pagamento in struttura",
+            "Parcheggio gratuito",
+            "Frigo in camera",
+            "Aria condizionata",
+            "Colazione inclusa",
+            "Centro benessere",
+            "TV in camera",
+            "Wi-Fi",
+            "Ristorante",
+            "Piscina al chiuso",
+            "Cancellazione gratuita",
+            "Sauna"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 12058,
+        "name" : "Hotel Napoli 4S",
+        "address" : "Piazza Dante 396",
+        "city" : "Napoli",
+        "type" : "4 stelle superior",
+        "phone" : "081-6975271",
+        "description" : "Un hotel elegante nei pressi di Napoli.",
+        "features" : [
+            "Pagamento in struttura",
+            "Cancellazione gratuita"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 12059,
+        "name" : "Hotel Napoli 5",
+        "address" : "Via Accademia 954",
+        "city" : "Napoli",
+        "type" : "5 stelle",
+        "phone" : "081-6855743",
+        "description" : "Un hotel elegante nei pressi di Napoli.",
+        "features" : [
+            "Sauna",
+            "Parcheggio gratuito",
+            "Piscina al chiuso",
+            "Frigo in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 12060,
+        "name" : "Hotel Napoli 5S",
+        "address" : "Corso Impero 549",
+        "city" : "Napoli",
+        "type" : "5 stelle superior",
+        "phone" : "081-8789059",
+        "description" : "Un hotel storico situato nel centro di Napoli.",
+        "features" : [ ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 13061,
+        "name" : "Hotel Palermo 3",
+        "address" : "Largo Colombo 11",
+        "city" : "Palermo",
+        "type" : "3 stelle",
+        "phone" : "091-4237152",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Palermo.",
+        "features" : [
+            "Parcheggio gratuito",
+            "Sauna"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 13062,
+        "name" : "Hotel Palermo 4",
+        "address" : "Viale Monterosa 749",
+        "city" : "Palermo",
+        "type" : "4 stelle",
+        "phone" : "091-1712256",
+        "description" : "Un hotel moderno con vista mozzafiato a Palermo.",
+        "features" : [
+            "Parcheggio gratuito",
+            "Wi-Fi",
+            "Aria condizionata",
+            "Pagamento in struttura",
+            "TV in camera",
+            "Palestra",
+            "Cancellazione gratuita",
+            "Piscina al chiuso",
+            "Ristorante",
+            "Sauna",
+            "Frigo in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 13063,
+        "name" : "Hotel Palermo 4S",
+        "address" : "Viale Costantino 980",
+        "city" : "Palermo",
+        "type" : "4 stelle superior",
+        "phone" : "091-6709627",
+        "description" : "Un hotel storico situato nel centro di Palermo.",
+        "features" : [
+            "Wi-Fi",
+            "Parcheggio gratuito",
+            "TV in camera",
+            "Palestra",
+            "Pagamento in struttura",
+            "Centro benessere",
+            "Sauna"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 13064,
+        "name" : "Hotel Palermo 5",
+        "address" : "Vicolo Corto 903",
+        "city" : "Palermo",
+        "type" : "5 stelle",
+        "phone" : "091-6557323",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Palermo.",
+        "features" : [
+            "TV in camera",
+            "Pagamento in struttura",
+            "Palestra",
+            "Cancellazione gratuita",
+            "Centro benessere",
+            "Colazione inclusa",
+            "Parcheggio gratuito",
+            "Aria condizionata",
+            "Piscina al chiuso",
+            "Ristorante",
+            "Sauna",
+            "Wi-Fi"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 13065,
+        "name" : "Hotel Palermo 5S",
+        "address" : "Via Verdi 677",
+        "city" : "Palermo",
+        "type" : "5 stelle superior",
+        "phone" : "091-6407202",
+        "description" : "Un hotel storico situato nel centro di Palermo.",
+        "features" : [
+            "Aria condizionata",
+            "Wi-Fi",
+            "Palestra",
+            "Cancellazione gratuita"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 14066,
+        "name" : "Hotel Perugia 3",
+        "address" : "Corso Magellano 967",
+        "city" : "Perugia",
+        "type" : "3 stelle",
+        "phone" : "075-2895212",
+        "description" : "Un hotel storico situato nel centro di Perugia.",
+        "features" : [
+            "Frigo in camera",
+            "Palestra",
+            "Piscina al chiuso",
+            "Cancellazione gratuita",
+            "Centro benessere",
+            "TV in camera",
+            "Aria condizionata",
+            "Ristorante"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 14067,
+        "name" : "Hotel Perugia 4",
+        "address" : "Viale Vesuvio 410",
+        "city" : "Perugia",
+        "type" : "4 stelle",
+        "phone" : "075-9307023",
+        "description" : "Un hotel moderno con vista mozzafiato a Perugia.",
+        "features" : [
+            "Aria condizionata"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 14068,
+        "name" : "Hotel Perugia 4S",
+        "address" : "Bastioni Gran Sasso 641",
+        "city" : "Perugia",
+        "type" : "4 stelle superior",
+        "phone" : "075-5080405",
+        "description" : "Un hotel moderno con vista mozzafiato a Perugia.",
+        "features" : [
+            "Parcheggio gratuito",
+            "Piscina al chiuso",
+            "Wi-Fi",
+            "Cancellazione gratuita",
+            "Pagamento in struttura"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 14069,
+        "name" : "Hotel Perugia 5",
+        "address" : "Corso Raffaello 88",
+        "city" : "Perugia",
+        "type" : "5 stelle",
+        "phone" : "075-1440966",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Perugia.",
+        "features" : [
+            "Centro benessere",
+            "Cancellazione gratuita",
+            "Palestra",
+            "TV in camera",
+            "Frigo in camera",
+            "Sauna",
+            "Wi-Fi",
+            "Pagamento in struttura",
+            "Aria condizionata",
+            "Piscina al chiuso",
+            "Ristorante",
+            "Colazione inclusa"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 14070,
+        "name" : "Hotel Perugia 5S",
+        "address" : "Via Roma 486",
+        "city" : "Perugia",
+        "type" : "5 stelle superior",
+        "phone" : "075-1690911",
+        "description" : "Un hotel storico situato nel centro di Perugia.",
+        "features" : [
+            "Piscina al chiuso",
+            "Colazione inclusa",
+            "Sauna",
+            "Pagamento in struttura",
+            "TV in camera",
+            "Frigo in camera",
+            "Cancellazione gratuita",
+            "Ristorante",
+            "Palestra",
+            "Wi-Fi"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 15071,
+        "name" : "Hotel Potenza 3",
+        "address" : "Via Accademia 231",
+        "city" : "Potenza",
+        "type" : "3 stelle",
+        "phone" : "0791-841988",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Potenza.",
+        "features" : [
+            "Ristorante",
+            "Cancellazione gratuita",
+            "Palestra",
+            "Piscina al chiuso",
+            "Colazione inclusa"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 15072,
+        "name" : "Hotel Potenza 4",
+        "address" : "Largo Augusto 318",
+        "city" : "Potenza",
+        "type" : "4 stelle",
+        "phone" : "0791-470487",
+        "description" : "Un hotel storico situato nel centro di Potenza.",
+        "features" : [
+            "Frigo in camera",
+            "Pagamento in struttura"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 15073,
+        "name" : "Hotel Potenza 4S",
+        "address" : "Largo Augusto 819",
+        "city" : "Potenza",
+        "type" : "4 stelle superior",
+        "phone" : "0791-281071",
+        "description" : "Un hotel storico situato nel centro di Potenza.",
+        "features" : [
+            "Frigo in camera",
+            "Cancellazione gratuita",
+            "Aria condizionata",
+            "Colazione inclusa",
+            "Pagamento in struttura",
+            "Palestra",
+            "TV in camera",
+            "Sauna",
+            "Wi-Fi",
+            "Piscina al chiuso"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 15074,
+        "name" : "Hotel Potenza 5",
+        "address" : "Viale Vesuvio 738",
+        "city" : "Potenza",
+        "type" : "5 stelle",
+        "phone" : "0791-706601",
+        "description" : "Un hotel moderno con vista mozzafiato a Potenza.",
+        "features" : [
+            "Parcheggio gratuito",
+            "Centro benessere"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 15075,
+        "name" : "Hotel Potenza 5S",
+        "address" : "Corso Ateneo 507",
+        "city" : "Potenza",
+        "type" : "5 stelle superior",
+        "phone" : "0791-719036",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Potenza.",
+        "features" : [
+            "Colazione inclusa",
+            "Aria condizionata",
+            "Parcheggio gratuito"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 16076,
+        "name" : "Hotel Roma 3",
+        "address" : "Vicolo Corto 549",
+        "city" : "Roma",
+        "type" : "3 stelle",
+        "phone" : "06-44278648",
+        "description" : "Un hotel moderno con vista mozzafiato a Roma.",
+        "features" : [
+            "Parcheggio gratuito",
+            "TV in camera",
+            "Aria condizionata",
+            "Wi-Fi",
+            "Palestra",
+            "Cancellazione gratuita",
+            "Sauna",
+            "Frigo in camera",
+            "Pagamento in struttura",
+            "Centro benessere"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 16077,
+        "name" : "Hotel Roma 4",
+        "address" : "Vicolo Corto 987",
+        "city" : "Roma",
+        "type" : "4 stelle",
+        "phone" : "06-27012765",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Roma.",
+        "features" : [ ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 16078,
+        "name" : "Hotel Roma 4S",
+        "address" : "Corso Impero 612",
+        "city" : "Roma",
+        "type" : "4 stelle superior",
+        "phone" : "06-42478628",
+        "description" : "Un hotel storico situato nel centro di Roma.",
+        "features" : [
+            "TV in camera",
+            "Cancellazione gratuita",
+            "Frigo in camera",
+            "Palestra",
+            "Pagamento in struttura",
+            "Piscina al chiuso",
+            "Sauna",
+            "Parcheggio gratuito",
+            "Wi-Fi",
+            "Ristorante",
+            "Colazione inclusa",
+            "Centro benessere"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 16079,
+        "name" : "Hotel Roma 5",
+        "address" : "Largo Colombo 102",
+        "city" : "Roma",
+        "type" : "5 stelle",
+        "phone" : "06-26648353",
+        "description" : "Un hotel storico situato nel centro di Roma.",
+        "features" : [
+            "TV in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 16080,
+        "name" : "Hotel Roma 5S",
+        "address" : "Via Marco Polo 60",
+        "city" : "Roma",
+        "type" : "5 stelle superior",
+        "phone" : "06-07505032",
+        "description" : "Un hotel moderno con vista mozzafiato a Roma.",
+        "features" : [
+            "Wi-Fi"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 17081,
+        "name" : "Hotel Torino 3",
+        "address" : "Corso Raffaello 245",
+        "city" : "Torino",
+        "type" : "3 stelle",
+        "phone" : "011-7383527",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Torino.",
+        "features" : [
+            "Ristorante",
+            "TV in camera",
+            "Palestra",
+            "Piscina al chiuso",
+            "Aria condizionata",
+            "Parcheggio gratuito",
+            "Centro benessere",
+            "Sauna",
+            "Colazione inclusa"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 17082,
+        "name" : "Hotel Torino 4",
+        "address" : "Via Roma 776",
+        "city" : "Torino",
+        "type" : "4 stelle",
+        "phone" : "011-4356434",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Torino.",
+        "features" : [
+            "Sauna",
+            "TV in camera",
+            "Ristorante",
+            "Aria condizionata"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 17083,
+        "name" : "Hotel Torino 4S",
+        "address" : "Viale dei Giardini 187",
+        "city" : "Torino",
+        "type" : "4 stelle superior",
+        "phone" : "011-0006792",
+        "description" : "Un hotel moderno con vista mozzafiato a Torino.",
+        "features" : [
+            "Colazione inclusa"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 17084,
+        "name" : "Hotel Torino 5",
+        "address" : "Viale Vesuvio 709",
+        "city" : "Torino",
+        "type" : "5 stelle",
+        "phone" : "011-9715047",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Torino.",
+        "features" : [
+            "Colazione inclusa",
+            "Piscina al chiuso",
+            "Palestra",
+            "Wi-Fi",
+            "TV in camera",
+            "Cancellazione gratuita",
+            "Ristorante",
+            "Frigo in camera",
+            "Aria condizionata",
+            "Parcheggio gratuito"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 17085,
+        "name" : "Hotel Torino 5S",
+        "address" : "Largo Augusto 436",
+        "city" : "Torino",
+        "type" : "5 stelle superior",
+        "phone" : "011-5017937",
+        "description" : "Un hotel elegante nei pressi di Torino.",
+        "features" : [
+            "Piscina al chiuso",
+            "TV in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 18086,
+        "name" : "Hotel Trento 3",
+        "address" : "Corso Ateneo 717",
+        "city" : "Trento",
+        "type" : "3 stelle",
+        "phone" : "0461-625523",
+        "description" : "Un hotel storico situato nel centro di Trento.",
+        "features" : [
+            "Aria condizionata",
+            "Piscina al chiuso",
+            "TV in camera",
+            "Centro benessere",
+            "Pagamento in struttura",
+            "Wi-Fi",
+            "Cancellazione gratuita",
+            "Sauna",
+            "Palestra",
+            "Frigo in camera",
+            "Colazione inclusa",
+            "Parcheggio gratuito"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 18087,
+        "name" : "Hotel Trento 4",
+        "address" : "Largo Colombo 29",
+        "city" : "Trento",
+        "type" : "4 stelle",
+        "phone" : "0461-224857",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Trento.",
+        "features" : [
+            "Pagamento in struttura"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 18088,
+        "name" : "Hotel Trento 4S",
+        "address" : "Largo Colombo 631",
+        "city" : "Trento",
+        "type" : "4 stelle superior",
+        "phone" : "0461-646876",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Trento.",
+        "features" : [
+            "Palestra",
+            "Parcheggio gratuito",
+            "Ristorante",
+            "Frigo in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 18089,
+        "name" : "Hotel Trento 5",
+        "address" : "Via Verdi 583",
+        "city" : "Trento",
+        "type" : "5 stelle",
+        "phone" : "0461-341386",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Trento.",
+        "features" : [
+            "Cancellazione gratuita",
+            "Piscina al chiuso",
+            "Wi-Fi",
+            "Palestra",
+            "Centro benessere",
+            "Aria condizionata",
+            "Sauna",
+            "Pagamento in struttura",
+            "Colazione inclusa",
+            "Ristorante",
+            "Frigo in camera",
+            "Parcheggio gratuito"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 18090,
+        "name" : "Hotel Trento 5S",
+        "address" : "Corso Impero 887",
+        "city" : "Trento",
+        "type" : "5 stelle superior",
+        "phone" : "0461-459892",
+        "description" : "Un hotel moderno con vista mozzafiato a Trento.",
+        "features" : [
+            "Parcheggio gratuito",
+            "Wi-Fi"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 19091,
+        "name" : "Hotel Trieste 3",
+        "address" : "Piazza Università 185",
+        "city" : "Trieste",
+        "type" : "3 stelle",
+        "phone" : "040-3799896",
+        "description" : "Un hotel elegante nei pressi di Trieste.",
+        "features" : [
+            "Pagamento in struttura",
+            "Palestra",
+            "Sauna",
+            "Parcheggio gratuito",
+            "Centro benessere",
+            "Frigo in camera",
+            "Colazione inclusa",
+            "Wi-Fi",
+            "Aria condizionata",
+            "Cancellazione gratuita",
+            "Piscina al chiuso"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 19092,
+        "name" : "Hotel Trieste 4",
+        "address" : "Piazza Dante 495",
+        "city" : "Trieste",
+        "type" : "4 stelle",
+        "phone" : "040-3642042",
+        "description" : "Un hotel storico situato nel centro di Trieste.",
+        "features" : [
+            "Aria condizionata",
+            "Cancellazione gratuita",
+            "TV in camera",
+            "Wi-Fi",
+            "Palestra"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 19093,
+        "name" : "Hotel Trieste 4S",
+        "address" : "Parco della Vittoria 902",
+        "city" : "Trieste",
+        "type" : "4 stelle superior",
+        "phone" : "040-3227491",
+        "description" : "Un hotel moderno con vista mozzafiato a Trieste.",
+        "features" : [
+            "Wi-Fi"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 19094,
+        "name" : "Hotel Trieste 5",
+        "address" : "Corso Raffaello 917",
+        "city" : "Trieste",
+        "type" : "5 stelle",
+        "phone" : "040-2488115",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Trieste.",
+        "features" : [
+            "Cancellazione gratuita"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 19095,
+        "name" : "Hotel Trieste 5S",
+        "address" : "Parco della Vittoria 370",
+        "city" : "Trieste",
+        "type" : "5 stelle superior",
+        "phone" : "040-7774636",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Trieste.",
+        "features" : [
+            "Aria condizionata",
+            "Cancellazione gratuita",
+            "TV in camera",
+            "Colazione inclusa"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 20096,
+        "name" : "Hotel Venezia 3",
+        "address" : "Viale Traiano 212",
+        "city" : "Venezia",
+        "type" : "3 stelle",
+        "phone" : "041-6312041",
+        "description" : "Un hotel moderno con vista mozzafiato a Venezia.",
+        "features" : [
+            "Palestra",
+            "Pagamento in struttura",
+            "Wi-Fi",
+            "Parcheggio gratuito",
+            "Aria condizionata",
+            "Frigo in camera",
+            "Centro benessere",
+            "Sauna",
+            "Ristorante",
+            "Piscina al chiuso",
+            "Cancellazione gratuita",
+            "TV in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 20097,
+        "name" : "Hotel Venezia 4",
+        "address" : "Piazza Università 81",
+        "city" : "Venezia",
+        "type" : "4 stelle",
+        "phone" : "041-1599017",
+        "description" : "Un hotel vicino alle principali attrazioni turistiche di Venezia.",
+        "features" : [
+            "Frigo in camera",
+            "Cancellazione gratuita",
+            "Ristorante",
+            "TV in camera"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 20098,
+        "name" : "Hotel Venezia 4S",
+        "address" : "Viale Vesuvio 966",
+        "city" : "Venezia",
+        "type" : "4 stelle superior",
+        "phone" : "041-7716193",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Venezia.",
+        "features" : [
+            "Sauna",
+            "Aria condizionata",
+            "Piscina al chiuso"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 20099,
+        "name" : "Hotel Venezia 5",
+        "address" : "Corso Magellano 56",
+        "city" : "Venezia",
+        "type" : "5 stelle",
+        "phone" : "041-5247926",
+        "description" : "Un hotel ristrutturato a due passi dal centro di Venezia.",
+        "features" : [
+            "Sauna"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    },
+    {
+        "id" : 20100,
+        "name" : "Hotel Venezia 5S",
+        "address" : "Viale Traiano 987",
+        "city" : "Venezia",
+        "type" : "5 stelle superior",
+        "phone" : "041-1008115",
+        "description" : "Un hotel storico situato nel centro di Venezia.",
+        "features" : [
+            "Frigo in camera",
+            "Sauna",
+            "Wi-Fi",
+            "Cancellazione gratuita",
+            "Pagamento in struttura",
+            "Aria condizionata"
+        ],
+        "rate" : 0.0,
+        "ratings" : {
+            "location" : 0.0,
+            "cleanliness" : 0.0,
+            "service" : 0.0,
+            "value" : 0.0
+        }
+    }
+]
