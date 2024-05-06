@@ -48,6 +48,7 @@ public class RankingHandler extends Thread {
     public void run() {
         while (Thread.currentThread().isAlive()) {
             try {
+                Thread.sleep(timeout);
                 System.out.println(HOTELIERServer.printCurrentDate() + "\tupdating rankings...");
                 // Aggiorno i ranking
                 HashMap<String, String[]> hotels = server.updateRankings();
@@ -61,7 +62,6 @@ public class RankingHandler extends Thread {
                 }
                 // Aggiorno la struttura dati e mi metto in attesa per il tempo stabilito
                 localRanking.putAll(hotels);
-                Thread.sleep(timeout);
             } catch (InterruptedException | RemoteException e) {
                 System.out.println(HOTELIERServer.printCurrentDate()
                         + "\tHOTELIERServer.RankingHandler.run(): an error occurred while updating rankings");
