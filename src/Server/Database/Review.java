@@ -68,7 +68,7 @@ public class Review implements Serializable {
 
     public double[] getRatings() { return new double[]{Double.parseDouble(ratings.toString())}; }
 
-    public List<String> getUpvotes() { return new LinkedList<>(upvotes); }
+    public synchronized List<String> getUpvotes() { return new LinkedList<>(upvotes); }
 
     public synchronized int getnUpvotes() { return upvotes.size(); }
 
