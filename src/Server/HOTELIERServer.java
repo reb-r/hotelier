@@ -359,8 +359,6 @@ public class HOTELIERServer extends RemoteServer implements RMIHOTELIERServer, H
      * @throws InvalidHotelException se l'hotel indicato non esiste
      */
     public String showAllReviews(String hotel, String city) throws InvalidCityException, InvalidHotelException {
-        if (!localRanking.containsKey(city)) throw new InvalidCityException();
-        if (!localRanking.get(city).contains(hotels.get(hotel))) throw new InvalidHotelException();
         List<Hotel> hotelList = search(hotel, city);
         // Caso analogo all'inserimento di una recensione
         if (hotelList.isEmpty()) throw new InvalidHotelException();
