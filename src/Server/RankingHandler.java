@@ -57,8 +57,9 @@ public class RankingHandler extends Thread {
                     // Notifico i client che hanno registrato interesse per quella città (perché si è aggiornata la classifica)
                     server.update(city);
                     // Controllo se è cambiato il primo classificato per inviare un messaggio sul gruppo di multicast
-                    if (!hotels.get(city)[0].equals(localRanking.get(city)[0]))
+                    if (!hotels.get(city)[0].equals(localRanking.get(city)[0])) {
                         sendMessage(city, localRanking.get(city)[0], hotels.get(city)[0]);
+                    }
                 }
                 // Aggiorno la struttura dati e mi metto in attesa per il tempo stabilito
                 localRanking.putAll(hotels);
