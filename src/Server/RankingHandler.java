@@ -19,7 +19,7 @@ public class RankingHandler extends Thread {
     /** Istanza del server */
     private final HOTELIERServer server;
     /** Struttura dati per le classifiche locali */
-    private final HashMap<String, String[]> localRanking;
+    private final HashMap<String, ArrayList<String>> localRanking;
     // lista di coppie <nome città, lista di hotel in ordine di ranking> aggiornata periodicamente
 
     /** Datagram socket */
@@ -51,14 +51,14 @@ public class RankingHandler extends Thread {
                 Thread.sleep(timeout);
                 System.out.println(HOTELIERServer.printCurrentDate() + "\tupdating rankings...");
                 // Aggiorno i ranking
-                HashMap<String, String[]> hotels = server.updateRankings();
+                HashMap<String, ArrayList<String>> hotels = server.updateRankings();
                 // Dopo l'aggiornamento, per ogni città controllo se la classifica è rimasta invariata
-                for (String city: localRanking.keySet()) if (!Arrays.equals(hotels.get(city), localRanking.get(city))) {
+                for (String city: localRanking.keySet()) if (!hotels.get(city).equals(localRanking.get(city))) {
                     // Notifico i client che hanno registrato interesse per quella città (perché si è aggiornata la classifica)
                     server.update(city);
                     // Controllo se è cambiato il primo classificato per inviare un messaggio sul gruppo di multicast
-                    if (!hotels.get(city)[0].equals(localRanking.get(city)[0]))
-                        sendMessage(city, localRanking.get(city)[0], hotels.get(city)[0]);
+                    if (!hotels.get(city).get(0).equals(localRanking.get(city).get(0)))
+                        sendMessage(city, localRanking.get(city).get(0), hotels.get(city).get(0));
                 }
                 // Aggiorno la struttura dati e mi metto in attesa per il tempo stabilito
                 localRanking.putAll(hotels);

@@ -418,7 +418,7 @@ public class HOTELIERServer extends RemoteServer implements RMIHOTELIERServer, H
      * </p>
      * @return la classifica aggiornata degli hotel per ogni città
      */
-    public HashMap<String, String[]> updateRankings() throws IOException {
+    public HashMap<String, ArrayList<String>> updateRankings() throws IOException {
         long time = System.currentTimeMillis(); // tempo corrente da usare per le chiamate di funzioni successive
 
         // Sincronizzo sulla struttura così da non consentire altre operazioni
@@ -429,14 +429,15 @@ public class HOTELIERServer extends RemoteServer implements RMIHOTELIERServer, H
         // Sincronizzo sulla struttura così da non consentire letture
         synchronized (localRanking) {
             // Definisco la struttura da restituire con le classifiche aggiornate
-            HashMap<String, String[]> localRanking = new HashMap<>();
+            HashMap<String, ArrayList<String>> localRanking = new HashMap<>();
             // Per ciascun hotel presente nella lista degli hotel di una città
             for (List<Hotel> hotels: this.localRanking.values()) {
                 // Ordino la lista confrontando i rankings degli hotel: la lista è ordinata in ordine non crescente
                 hotels.sort(Comparator.comparingInt(Hotel::getRanking).reversed());
+                if (hotels.get(0).getCity().equals("Ancona")) hotels.forEach(hotel -> System.out.println(hotel.getRanking()));
                 // Assegno a ciascun hotel così ordinato la posizione corrispondente nella classifica
                 hotels.forEach(element -> element.setRank(hotels.indexOf(element) + 1));
-                localRanking.put(hotels.get(0).getCity(), (String[]) hotels.stream().map(Hotel::getName).toArray());
+                localRanking.put(hotels.get(0).getCity(), new ArrayList<>(hotels.stream().map(Hotel::getName).toList()));
             }
             return localRanking;
         }
@@ -467,7 +468,8 @@ public class HOTELIERServer extends RemoteServer implements RMIHOTELIERServer, H
         for (Review review: reviews.get(hotel.getName())) {
             mod_time = (int) (time - review.getTime()) / 1000; // divido per 1000 per ottenere i secondi
             partial += review.getRate() * 20 / (1 + mod_time); // moltiplico il punteggio per 20 così da scalarlo nel range [0, 100]
-            weight += (int) (Math.log(review.getnUpvotes()) / Math.log(2)); // calcolo il logaritmo in base 2 dei voti
+            if (review.getnUpvotes() > 0)
+                weight += (int) (Math.log(review.getnUpvotes()) / Math.log(2)); // calcolo il logaritmo in base 2 dei voti
         }
         // Assegno il nuovo ranking ottenuto all'hotel, sommando i valori ottenuti e arrotondo a intero la somma
         hotel.setRanking((int) Math.round(reviews.get(hotel.getName()).size() + partial + weight));
