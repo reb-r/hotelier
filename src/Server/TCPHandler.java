@@ -336,10 +336,9 @@ public class TCPHandler extends Thread {
         String reply = new String (buffer.array());
         // Rimuovo dalla risposta il primo elemento che fa riferimento al tipo di sessione del client
         buffer = ByteBuffer.wrap(reply.split(" ", 2)[1].getBytes(CHARSET));
-        channel.write(buffer); // scrivo il messaggio sul canale
-        if (buffer.hasRemaining()) return;
-        // Se ho scritto tutto, registro di nuovo il canale con operazione di interesse OP_READ in modo da renderlo disponibile
-        // per un'eventuale parsing di una nuova richiesta
+        while (buffer.hasRemaining()) channel.write(buffer); // scrivo il messaggio sul canale
+        // Quando ho scritto tutto, registro di nuovo il canale con operazione di interesse OP_READ
+        // in modo da renderlo disponibile per un'eventuale parsing di una nuova richiesta
         channel.register(selector, SelectionKey.OP_READ, key.attachment());
     }
 
