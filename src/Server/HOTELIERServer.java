@@ -434,7 +434,6 @@ public class HOTELIERServer extends RemoteServer implements RMIHOTELIERServer, H
             for (List<Hotel> hotels: this.localRanking.values()) {
                 // Ordino la lista confrontando i rankings degli hotel: la lista è ordinata in ordine non crescente
                 hotels.sort(Comparator.comparingInt(Hotel::getRanking).reversed());
-                if (hotels.get(0).getCity().equals("Ancona")) hotels.forEach(hotel -> System.out.println(hotel.getRanking()));
                 // Assegno a ciascun hotel così ordinato la posizione corrispondente nella classifica
                 hotels.forEach(element -> element.setRank(hotels.indexOf(element) + 1));
                 localRanking.put(hotels.get(0).getCity(), new ArrayList<>(hotels.stream().map(Hotel::getName).toList()));
