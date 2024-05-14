@@ -74,7 +74,7 @@ public class Ratings implements Serializable {
      * @return il valore che corrisponde alla nuova media corrente
      */
     private double calculateAverage(double curr_average, double score, int count) {
-        double average = ((count - 1) * curr_average + score)/count; // calcolo la media con l'aggiunta del nuovo rating
+        double average = ((count - 1) * curr_average + score)/count; // calcolo la media con l'aggiunta del nuovo punteggio
         return (double) Math.round(average * 10)/10.0; // arrotondamento della media a una cifra decimale
     }
 }

@@ -445,11 +445,12 @@ public class HOTELIERServer extends RemoteServer implements RMIHOTELIERServer, H
     /**
      * Calcola il punteggio (ranking) di un hotel.
      * <p> Dato un hotel, per ogni recensione <i>i</i> utilizza la funzione: </p>
-     * <p align="center"> <i> f<sub>i</sub>(t) = R<sub>i</sub>/(1 + t) + log<sub>2</sub> U<sub>i</sub> </i>, </p>
+     * <p align="center"> <i> f<sub>i</sub>(t) = R<sub>i</sub>/(1 + t) + U<sub>i</sub> </i>, </p>
+     * dove <i> U<sub>i</sub> = log<sub>2</sub> u<sub>i</sub> </i>, se <i> u<sub>i</sub> </i> è maggiore di zero o zero altrimenti.
      * <p align="justify">
-     *     in cui la costante <i> R<sub>i</sub> </i> rappresenta il punteggio sintetico della recensione scalato
-     *     nell'intervallo tra 0 e 100; <i> U<sub>i</sub> </i> sono i voti utili ricevuti della recensione; <i> t </i>
-     *     è l'intervallo di tempo che intercorre tra il tempo di pubblicazione della recensione e {@code time}.
+     *     La costante <i> R<sub>i</sub> </i> rappresenta il punteggio sintetico della recensione scalato
+     *     nell'intervallo tra 0 e 100; <i> t </i> è l'intervallo di tempo che intercorre tra il tempo di pubblicazione
+     *     della recensione e {@code time}; <i> u<sub>i</sub> </i> sono i voti utili ricevuti della recensione.
      * </p> <p align="justify">
      *     Successivamente per ogni hotel, si ha
      *     <i> f(t) = n + ∑<sub>i</sub> f<sub>i</sub>(t) </i>,

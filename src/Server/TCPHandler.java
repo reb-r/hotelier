@@ -2,7 +2,6 @@ package Server;
 
 import MyExceptions.*;
 import Server.Database.Hotel.*;
-import Server.Database.Review;
 import Server.Message.Request.Method;
 
 import java.io.IOException;
