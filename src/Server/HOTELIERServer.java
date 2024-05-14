@@ -90,15 +90,13 @@ public class HOTELIERServer extends RemoteServer implements RMIHOTELIERServer, H
         // Recupero i backup per ripristinare le strutture dati
         readFile(hotel_database, user_database);
 
-        // Inizializzo le classifiche una prima volta
-        updateRankings();
-
         // Inizializzo e avvio i threads che si occupano dell'aggiornamento dei backup, dei rankings locali
         // e della gestione delle connessioni/richieste
         BackupHandler backupHandler = new BackupHandler(backup_timeout, this, user_filename, hotel_filename,
                 file_format, backup_filepath);
         backupHandler.start();
-        RankingHandler rankingHandler = new RankingHandler(ranking_timeout, this, multicast_address, multicast_port);
+        RankingHandler rankingHandler = new RankingHandler(ranking_timeout, this, updateRankings(),
+                multicast_address, multicast_port);
         rankingHandler.start();
         TCPHandler TCPHandler = new TCPHandler(this, connection_port);
         TCPHandler.start();

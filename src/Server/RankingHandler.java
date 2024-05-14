@@ -31,14 +31,15 @@ public class RankingHandler extends Thread {
     /** Buffer per l'invio dei pacchetti */
     private byte[] buffer;
 
-    public RankingHandler(long timeout, HOTELIERServer server, String multicast_address, int multicast_port)
+    public RankingHandler(long timeout, HOTELIERServer server, HashMap<String, ArrayList<String>> localRanking,
+                          String multicast_address, int multicast_port)
             throws UnknownHostException, SocketException {
         // Assegno i parametri alle variabili
         RankingHandler.timeout = timeout;
         this.server = server;
         this.multicast_address = InetAddress.getByName(multicast_address);
         this.multicast_port = multicast_port;
-        this.localRanking = new HashMap<>();
+        this.localRanking = localRanking;
 
         // Costruisco la datagram socket per l'invio dei messaggi di notifica per l'aggiornamento delle classifiche
         socket = new DatagramSocket(65535);
