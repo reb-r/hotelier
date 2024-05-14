@@ -248,11 +248,10 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
      */
     private void registerForCallback() throws RemoteException {
         List<String> values = new ArrayList<>(Arrays.stream(City.values()).map(City::getName).toList());
-        System.out.println("Inserisci le città di interesse per cui intendi ricevere notifiche sull'aggiornamento dei relativi ranking locali.");
-        System.out.println("Premi INVIO dopo aver inserito il nome di una città e digita 'confirm' quando hai concluso la selezione.");
-        System.out.println("Ecco l'elenco delle città disponibili:");
-        for (String city: values) System.out.printf("\t%s %s\n", ">", city); // stampo l'elenco delle città disponibili
-        System.out.println("Se desideri saltare questo passaggio digita 'skip' in qualsiasi momento.");
+        System.out.println("Inserisci le città di interesse per cui intendi ricevere notifiche sull'aggiornamento dei ranking locali.");
+        System.out.println("Premi INVIO dopo aver inserito il nome di una città e digita DONE quando hai concluso la selezione.");
+        printCities(); // stampo l'elenco delle città disponibili
+        System.out.println("Se desideri saltare questo passaggio digita SKIP in qualsiasi momento.");
 
         String city;
         List<String> cities = new LinkedList<>();
@@ -260,10 +259,10 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
             System.out.print("> ");
             if ((input = stream.nextLine()).isBlank()) continue; // se l'input è vuoto, continuo
             if (isCancel(input)) break; // se è cancel, esco
-            else if (input.equals("skip")) { // se è skip, mostro il menu ed esco
+            else if (input.equalsIgnoreCase("SKIP")) { // se è skip, mostro il menu ed esco
                 menu();
                 break;
-            } else if (input.equals("confirm")) { // se è confirm
+            } else if (input.equalsIgnoreCase("DONE")) { // se è confirm
                 // Controllo che l'insieme delle città selezionate non sia vuoto, altrimenti lo comunico
                 if (!cities.isEmpty()) {
                     // Imposto l'insieme delle città di interesse per questo utente e lo registro per la callback
@@ -895,5 +894,13 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
         System.out.printf("\t%-15s %s\n", HELP.command, HELP.description);
         System.out.printf("\t%-15s %s\n", CANCEL.command, CANCEL.description);
         System.out.printf("\t%-15s %s\n", QUIT.command, QUIT.description);
+        printCities();
+    }
+
+    private void printCities() {
+        System.out.println("Di seguito l'elenco delle città disponibili:");
+        City[] cities = City.values();
+        for (int i = 0; i < cities.length/4; i++) System.out.printf("\t- %-15s - %-15s - %-15s - %-15s\n",
+                cities[i].getName(), cities[i + 5].getName(), cities[i + 10].getName(), cities[i + 15].getName());
     }
 }
