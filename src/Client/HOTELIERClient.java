@@ -211,7 +211,7 @@ public abstract class HOTELIERClient extends RemoteObject implements Runnable, C
         /** Comando per la visualizzazione delle recensioni pubblicate */
         SHOWMYREVIEWS("showmyreviews", "per visualizzare le recensioni che hai pubblicato", "none"),
         /** Comando per ricevere aiuto */
-        HELP("help", " l'o", null),
+        HELP("help", "per ricevere aiuto", null),
         /** Comando per annullare */
         CANCEL("cancel", "per annullare un'operazione in qualsiasi momento", null),
         /** Comando per uscire dall'applicazione */
