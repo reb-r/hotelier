@@ -44,7 +44,7 @@ public class GUIHOTELIERCustomerClient extends HOTELIERClient {
         UIManager.put("ScrollPane.arc", 20);
         UIManager.put("ScrollPane.smoothScrolling", true);
         UIManager.put("ScrollBar.showButtons", true);
-        if (System.getProperty("os.name").startsWith("Ubuntu")) System.setProperty("flatlaf.useUbuntuFont", "true");
+        if (System.getProperty("os.name").equals("Linux")) System.setProperty("flatlaf.useUbuntuFont", "true");
     }
 
     @Override
