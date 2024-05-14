@@ -71,8 +71,8 @@ public class TCPHandler extends Thread {
                     try {
                         // Controllo per quale operazione il canale associato alla chiave è pronto
                         if (key.isAcceptable()) handleAccept(key); // OP_ACCEPT
-                        if (key.isReadable()) handleRead(key); // OP_READ
-                        if (key.isWritable()) handleWrite(key); // OP_WRITE
+                        else if (key.isReadable()) handleRead(key); // OP_READ
+                        else if (key.isWritable()) handleWrite(key); // OP_WRITE
                     } catch (IOException e) {
                         String atch = new String(((ByteBuffer) key.attachment()).array());
                         String client = ((InetSocketAddress) ((SocketChannel) key.channel()).getRemoteAddress()).getHostString();
