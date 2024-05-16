@@ -247,7 +247,7 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
      * @throws RemoteException
      */
     private void registerForCallback() throws RemoteException {
-        List<String> values = new ArrayList<>(Arrays.stream(City.values()).map(city -> city.getName().toLowerCase()).toList());
+        List<String> values = new ArrayList<>(Arrays.stream(City.values()).map(City::getName).toList());
         System.out.println("Inserisci le città di interesse per cui intendi ricevere notifiche sull'aggiornamento dei ranking locali.");
         System.out.println("Premi INVIO dopo aver inserito il nome di una città e digita DONE quando hai concluso la selezione.");
         printCities(); // stampo l'elenco delle città disponibili
@@ -283,7 +283,7 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
                 break;
             } else { // se è stato inserito altro
                 // Controllo che l'ìnput corrisponda a una delle città disponibili, altrimenti comunico l'errore
-                city = input.toLowerCase();
+                city = input;
                 if (values.contains(city)) cities.add(city);
                 else System.out.println("Attenzione: devi scegliere tra una delle città a disposizione!");
             }
