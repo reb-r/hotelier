@@ -124,14 +124,14 @@ public abstract class HOTELIERClient extends RemoteObject implements Runnable, C
         StringBuilder msg = new StringBuilder();
         // Finché il buffer viene riempito interamente, continuo a leggere dal canale per verificare che non ci sia altro
         while (buffer.limit() == buffer.capacity()) {
-            buffer.clear(); // svuoto il buffer e torno in modalità scrittura
+            buffer.clear(); // torno in modalità scrittura
             channel.read(buffer); // leggo i dati presenti sul canale nel buffer
             buffer.flip(); // torno in modalità lettura
             byte[] bytes = new byte[buffer.limit()];
             buffer.get(bytes); // copio i dati dal buffer in un array di bytes
             msg.append(new String(bytes)); // appendo la nuova stringa alla stringa costruita
         }
-        buffer.clear(); // svuoto il buffer e torno in modalità scrittura per la prossima ricezione (limit = capacity)
+        buffer.clear(); // torno in modalità scrittura per la prossima ricezione (limit = capacity)
         return msg.toString().split("\n", 2);
     }
 

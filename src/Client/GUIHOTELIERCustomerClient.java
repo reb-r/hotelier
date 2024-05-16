@@ -133,7 +133,7 @@ public class GUIHOTELIERCustomerClient extends HOTELIERClient {
             List<List<String>> hotels = server.registerForCallback(stub, cities);
             if (hotels != null) {
                 for (int i = 0; i < cities.size(); i++) setRanking(cities.get(i), hotels.get(i));
-                showMessageDialog(frame, "Città per cui desideri ricevere aggiornamenti in questa sessione: "
+                showMessageDialog(frame, "Città per cui desideri ricevere aggiornamenti in questa sessione:\n"
                                 + cities.toString().replaceAll("[\\[|\\]]", "") + ".",
                         "Ranking update notification", INFORMATION_MESSAGE);
             } else showMessageDialog(frame, "Si è verificato un errore durante l'impostazione delle notifiche.",

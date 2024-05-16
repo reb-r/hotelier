@@ -134,19 +134,19 @@ public class TCPHandler extends Thread {
     private void handleRead(SelectionKey key) throws IOException {
         // Reperisco il canale associato alla chiave indicata
         SocketChannel channel = (SocketChannel) key.channel();
-        buffer.clear(); // svuoto il buffer e torno in modalità scrittura
         int bytesRead;
         StringBuilder request = new StringBuilder(); // per costruire la risposta
+        buffer.clear(); // torno in modalità scrittura
         // Leggo i dati presenti sul canale nel buffer, controllando che effettivamente sia stato inviato qualcosa
         while ((bytesRead = channel.read(buffer)) > 0) {
             buffer.flip(); // torno in modalità lettura
             byte[] bytes = new byte[buffer.limit()];
             buffer.get(bytes); // copio i dati dal buffer in un array di bytes
             request.append(new String(bytes)); // appendo la nuova stringa alla stringa costruita
-            buffer.clear(); // svuoto il buffer e torno in modalità scrittura
+            buffer.clear(); // torno in modalità scrittura
         }
         // Controllo che non sia stata raggiunta la fine dello stream, nel caso chiudo la connessione
-        if (bytesRead < 0) channel.close();
+        if (bytesRead == -1) channel.close();
         else {
             String message = request.toString(); // messaggio di richiesta
             String attachment = new String(((ByteBuffer) key.attachment()).array()); // attachment registrato con il canale
@@ -332,7 +332,7 @@ public class TCPHandler extends Thread {
         // Reperisco il canale associato alla chiave indicata e l'attachment
         SocketChannel channel = (SocketChannel) key.channel();
         buffer = (ByteBuffer) key.attachment();
-        String reply = new String (buffer.array());
+        String reply = new String(buffer.array());
         // Rimuovo dalla risposta il primo elemento che fa riferimento al tipo di sessione del client
         buffer = ByteBuffer.wrap(reply.split(" ", 2)[1].getBytes(CHARSET));
         channel.write(buffer); // scrivo il messaggio sul canale
