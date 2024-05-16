@@ -76,7 +76,6 @@ public class TCPHandler extends Thread {
                     } catch (IOException e) {
                         String atch = new String(((ByteBuffer) key.attachment()).array());
                         String client = ((InetSocketAddress) ((SocketChannel) key.channel()).getRemoteAddress()).getHostString();
-                        System.out.println(HOTELIERServer.printCurrentDate() + "\tclient "+ client + " closed connection");
                         // Se il client ha chiuso la connessione senza fare il logout, viene fatto in automatico
                         if (atch.startsWith(SESSION.session)) {
                             try {
@@ -146,7 +145,11 @@ public class TCPHandler extends Thread {
             buffer.clear(); // torno in modalità scrittura
         }
         // Controllo che non sia stata raggiunta la fine dello stream, nel caso chiudo la connessione
-        if (bytesRead == -1) channel.close();
+        if (bytesRead == -1) {
+            String client = ((InetSocketAddress) ((SocketChannel) key.channel()).getRemoteAddress()).getHostString();
+            System.out.println(HOTELIERServer.printCurrentDate() + "\tclient "+ client + " closed connection");
+            channel.close();
+        }
         else {
             String message = request.toString(); // messaggio di richiesta
             String attachment = new String(((ByteBuffer) key.attachment()).array()); // attachment registrato con il canale
@@ -193,7 +196,10 @@ public class TCPHandler extends Thread {
                                 String client = ((InetSocketAddress)
                                         ((SocketChannel) key.channel()).getRemoteAddress()).getHostString();
                                 // Comunico l'esito del logout
-                                if (server.logout(user)) message = GUEST + client + " " + SUCCESS + DONE.info;
+                                if (server.logout(user)) {
+                                    message = GUEST + client + " " + SUCCESS + DONE.info;
+                                    System.out.println(HOTELIERServer.printCurrentDate() + "\t" + user + " left");
+                                }
                                 else message += ERROR + LOGOUTERROR.toString();
                             } catch (UserNotLoggedInException | UserNotRegisteredException e) {
                                 message += ERROR + exceptionToString(e);

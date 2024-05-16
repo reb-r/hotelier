@@ -25,12 +25,15 @@ import static Server.Message.Reply.Info.*;
 public class HOTELIERCustomerClient extends HOTELIERClient {
     /** Scanner per lo stream di input */
     private final Scanner stream = new Scanner(System.in);
+    /** Recensioni visualizzate al momento */
+    private final LinkedList<String> id;
     /** Input */
     private String input; // ultimo dato immesso
 
     public HOTELIERCustomerClient(String server_address, int connection_port, int registry_port,
                                   String multicast_address, int multicast_port) throws IOException, NotBoundException {
         super(server_address, connection_port, registry_port);
+        id = new LinkedList<>();
         multicast = new MulticastClient(multicast_address, multicast_port);
     }
 
@@ -46,7 +49,7 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
 
             // Determino il comando inserito dall'utente
             if ((command = Command.parseCommand(input = stream.nextLine())) == null)
-                System.out.println("Attenzione: il comando inserito non è valido! Se hai bisogno di aiuto digita 'help' e riprova.");
+                System.out.println("Attenzione: il comando inserito non è valido! Se hai bisogno di aiuto digita help o riprova.");
             else switch (command) {
                 case REGISTER:
                     // Controllo se non ha effettuato l'accesso, altrimenti non può registrarsi
@@ -86,6 +89,7 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
                         System.out.print("> ");
                     }
                     check = false;
+                    id.clear();
                     break;
                 case SHOWMYREVIEWS:
                     // Controllo se ha effettuato l'accesso, altrimenti non può visualizzare le proprie recensioni
@@ -107,6 +111,7 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
 
 
     public synchronized void notifyEvent(String city, List<String> hotels) throws RemoteException {
+        System.out.println("...");
         System.out.println("Notifica evento: aggiornamento classifica di " + city);
         List<String> ranking = getRanking(city); // classifica non aggiornata
         // Aggiorno la classifica
@@ -116,6 +121,7 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
             if (ranking.get(i).equals(hotels.get(i))) System.out.printf("%d. %s -> %s\n", i + 1, ranking.get(i), hotels.get(i));
             else System.out.printf("%d. %s -> %s (NEW)\n", i + 1, ranking.get(i), hotels.get(i));
         }
+        System.out.printf("> ");
     }
 
     /**
@@ -272,8 +278,8 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
                     if (hotels != null) {
                         // Stampo su schermo l'insieme delle città di interesse per cui l'utente si è registrato
                         for (int i = 0; i < cities.size(); i++) setRanking(cities.get(i), hotels.get(i));
-                        System.out.println("Città per cui desideri ricevere aggiornamenti in questa sessione: "
-                                + cities.toString().replaceAll("[\\[|\\]]", ""));
+                        System.out.println("Città per cui desideri ricevere aggiornamenti in questa sessione:\n"
+                                + cities.toString().replaceAll("[\\[|\\]]", "") + ".");
                     } else System.out.println("Si è verificato un errore durante l'impostazione delle notifiche.");
                 } else {
                     System.out.println("Non hai inserito alcuna città di interesse. "
@@ -284,7 +290,10 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
             } else { // se è stato inserito altro
                 // Controllo che l'ìnput corrisponda a una delle città disponibili, altrimenti comunico l'errore
                 city = input;
-                if (values.contains(city)) cities.add(city);
+                if (values.contains(city)) {
+                    if (cities.contains(city)) System.out.println("Attenzione: hai già selezionato questa città.");
+                    else cities.add(city);
+                }
                 else System.out.println("Attenzione: devi scegliere tra una delle città a disposizione!");
             }
         }
@@ -333,7 +342,7 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
             } catch (IOException e) {
                 exit("Si è verificato un errore durante il logout.");
             }
-        } else System.out.println("Operazione annullata. Se hai bisogno di aiuto digita 'help'.");
+        } else System.out.println("Operazione annullata. Se hai bisogno di aiuto digita help.");
         return false;
     }
 
@@ -645,7 +654,7 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
                     if (!reply[0].split(" ", 2)[1].equals(NOTFOUND.info)) {
                         System.out.printf("Ecco le recensioni relative alla struttura %s:\n", hotel);
                         printReviews(reply[1].split("\n"), 2);
-                        System.out.println("Per consigliare una recensione puoi digitare 'upvote #' seguito dal numero della recensione.");
+                        System.out.println("Per consigliare una recensione puoi digitare upvote #id, dove id è numero della recensione.");
                     } else System.out.println("Non ci sono ancora recensioni per questa struttura.");
                 } else System.out.println(reply[1]);
             } else System.out.println("Si è verificato un errore durante la visualizzazione delle recensioni. Si prega di riprovare.");
@@ -661,15 +670,17 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
      * </p> <p align="justify">
      *     Successivamente invia una richiesta al server da parte del client e stampa l'esito.
      * </p>
-     * @param id la stringa che rappresenta l'id della recensione da votare, preceduta da '#'
+     * @param id la stringa che rappresenta l'id della recensione da votare, preceduta da #
      */
     private void upvote(String id) {
         // Controllo che l'id sia nel formato specificato
         if (!id.matches("#[0-9]+"))
-            System.out.println("Attenzione: '#' deve essere seguito da un numero intero che fa riferimento alla recensione dell'hotel!");
+            System.out.println("Attenzione: # deve essere seguito da un numero intero che fa riferimento alla recensione dell'hotel!");
+        else if (!this.id.contains(id))
+            System.out.println("Attenzione: # deve essere seguito dal numero che fa riferimento a una delle recensioni visualizzate!");
         else try {
             // Invio il messaggio di richiesta al server e gestisco la risposta
-            String[] reply = sendRequest(Request.getMessage(UPVOTE, input = stream.nextLine().trim()));
+            String[] reply = sendRequest(Request.getMessage(UPVOTE, input.trim()));
             if (reply == null) return;
             if (reply.length > 0) {
                 // Effettuo il parsing della risposta secondo lo schema [STATUS Info Body] dove
@@ -741,7 +752,9 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
             for (int field = 0; field < Review.getnFields(); field++) {
                 switch (field) {
                     // ID
-                    case 0: System.out.printf("%s #%s\n", "Recensione", element[field].trim());
+                    case 0:
+                        System.out.printf("%s #%s\n", "Recensione", element[field].trim());
+                        id.add("#" + element[field].trim());
                         break;
                     // AUTORE
                     case 1:

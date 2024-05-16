@@ -59,7 +59,7 @@ public class MulticastClient extends Thread {
 
     @Override
     public void run() {
-        while (Thread.currentThread().isAlive()) {
+        while (!Thread.currentThread().isInterrupted()) {
             // Controllo se è iscritto al gruppo di multicast
             if (subscribed) try {
                 // Costruisco un nuovo pacchetto per la ricezione del messaggio

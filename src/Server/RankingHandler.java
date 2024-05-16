@@ -63,9 +63,12 @@ public class RankingHandler extends Thread {
                 }
                 // Aggiorno la struttura dati e mi metto in attesa per il tempo stabilito
                 localRanking.putAll(hotels);
-            } catch (InterruptedException | RemoteException e) {
+            } catch (InterruptedException e) {
                 System.out.println(HOTELIERServer.printCurrentDate()
                         + "\tHOTELIERServer.RankingHandler.run(): an error occurred while updating rankings");
+            } catch (RemoteException e) {
+                System.out.println(HOTELIERServer.printCurrentDate()
+                        + "\tHOTELIERServer.RankingHandler.run(): an error occurred while sending updated rankings");
             } catch (IOException e) {
                 System.out.println(HOTELIERServer.printCurrentDate()
                         + "\tHOTELIERServer.RankingHandler.run(): an error occurred while sending multicast datagrams");

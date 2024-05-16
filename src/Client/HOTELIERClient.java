@@ -1,5 +1,6 @@
 package Client;
 
+import Server.Message;
 import Server.RMIHOTELIERServer;
 
 import java.io.IOException;
@@ -18,6 +19,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.*;
 import java.util.stream.Collectors;
+
+import static Client.HOTELIERClient.Command.LOGOUT;
 
 
 /**
@@ -62,6 +65,18 @@ public abstract class HOTELIERClient extends RemoteObject implements Runnable, C
         // Esporto questo oggetto remoto per poter usare le callback
         stub = (CallbackHOTELIERClient) UnicastRemoteObject.exportObject(this, 0);
         session = null;
+
+        // Definisco il thread che viene eseguito quando viene invocata la chiusura, per assicurare una corretta gestione
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            try {
+                if (isLoggedIn()) sendRequest(Message.Request.getMessage(LOGOUT, getSession()));
+                if (multicast.isAlive()) {
+                    multicast.unsubscribe();
+                }
+                server.unregisterForCallback(stub);
+                channel.close();
+            } catch (IOException ignored) { }
+        }));
     }
 
     @Override
