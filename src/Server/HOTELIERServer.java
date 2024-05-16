@@ -89,6 +89,8 @@ public class HOTELIERServer extends RemoteServer implements RMIHOTELIERServer, H
 
         // Recupero i backup per ripristinare le strutture dati
         readFile(hotel_database, user_database);
+        for (List<Hotel> hotels: this.localRanking.values()) hotels.sort(Comparator.comparing(Hotel::getName));
+        updateRankings();
 
         // Inizializzo e avvio i threads che si occupano dell'aggiornamento dei backup, dei rankings locali
         // e della gestione delle connessioni/richieste
@@ -464,8 +466,8 @@ public class HOTELIERServer extends RemoteServer implements RMIHOTELIERServer, H
 
         // Per ciascuna review nella lista, calcola la funzione per aggiornare il ranking ed eventualmente la classifica
         for (Review review: reviews.get(hotel.getName())) {
-            mod_time = (int) (time - review.getTime()) / 1000; // divido per 1000 per ottenere i secondi
-            partial += review.getRate() * 20 / (1 + mod_time); // moltiplico il punteggio per 20 così da scalarlo nel range [0, 100]
+            mod_time = (int) (time - review.getTime())/1000; // divido per 1000 per ottenere i secondi
+            partial += (review.getRate() * 20)/(1 + mod_time); // moltiplico il punteggio per 20 così da scalarlo nel range [0, 100]
             if (review.getnUpvotes() > 0)
                 weight += (int) (Math.log(review.getnUpvotes()) / Math.log(2)); // calcolo il logaritmo in base 2 dei voti
         }

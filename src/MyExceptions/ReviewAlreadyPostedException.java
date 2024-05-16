@@ -6,5 +6,3 @@ public class ReviewAlreadyPostedException extends Exception {
                 + "Devi attendere ancora " + time + "s per pubblicare la prossima.");
     }
 }
-
-

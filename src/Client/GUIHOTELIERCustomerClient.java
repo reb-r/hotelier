@@ -169,7 +169,7 @@ public class GUIHOTELIERCustomerClient extends HOTELIERClient {
         try {
             String[] reply;
             if (hotel == null) reply = sendRequest(Message.Request.getMessage(SEARCHALL, city));
-            else reply = sendRequest(Message.Request.getMessage(SEARCH, hotel, city));
+            else reply = sendRequest(Message.Request.getMessage(SEARCH, hotel.trim(), city));
             if (reply == null) return null;
             if (reply.length > 0) {
                 if (reply[0].startsWith(SUCCESS.toString())) {

@@ -73,18 +73,17 @@ public interface HOTELIERServerInterface {
      * @param score il punteggio sintetico
      * @param scores i punteggi per categoria
      * @param username l'utente autore della recensione
-     * @throws InvalidHotelException se l'hotel da recensire non esiste
+     * @throws InvalidHotelException se l'hotel da recensire non esiste, se non corrisponde ad alcuna struttura o
+     * fa riferimento a più strutture
      * @throws UserNotRegisteredException se l'utente non è registrato
      * @throws UserNotLoggedInException se l'utente non ha effettuato l'accesso
      * @throws InvalidCityException se la città non è una di quelle selezionabili previste
-     * @throws InvalidReviewHotelException se l'hotel da recensire non corrisponde ad alcuna struttura o fa riferimento
-     * a più strutture
      * @throws InvalidScoreException se i punteggi non sono conformi, cioè non sono compresi tra 0 e 5
      * @throws ReviewAlreadyPostedException se l'utente ha già postato di recente una recensione per la stessa struttura
      */
     void insertReview(String hotel, String city, double score, double[] scores, String username)
             throws InvalidHotelException, UserNotRegisteredException, UserNotLoggedInException, InvalidCityException,
-            InvalidReviewHotelException, InvalidScoreException, ReviewAlreadyPostedException;
+            InvalidScoreException, ReviewAlreadyPostedException;
 
     /**
      * <p align="justify">

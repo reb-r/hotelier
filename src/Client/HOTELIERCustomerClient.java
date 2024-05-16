@@ -255,20 +255,20 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
     private void registerForCallback() throws RemoteException {
         List<String> values = new ArrayList<>(Arrays.stream(City.values()).map(City::getName).toList());
         System.out.println("Inserisci le città di interesse per cui intendi ricevere notifiche sull'aggiornamento dei ranking locali.");
-        System.out.println("Premi INVIO dopo aver inserito il nome di una città e digita DONE quando hai concluso la selezione.");
+        System.out.println("Premi INVIO dopo aver inserito il nome di una città, quando hai concluso la selezione digita done.");
         printCities(); // stampo l'elenco delle città disponibili
-        System.out.println("Se desideri saltare questo passaggio digita SKIP in qualsiasi momento.");
+        System.out.println("Se desideri saltare questo passaggio digita skip.");
 
         String city;
         List<String> cities = new LinkedList<>();
         while (true) {
             System.out.print("> ");
-            if ((input = stream.nextLine()).isBlank()) continue; // se l'input è vuoto, continuo
+            if ((input = stream.nextLine().trim()).isBlank()) continue; // se l'input è vuoto, continuo
             if (isCancel(input)) break; // se è cancel, esco
-            else if (input.equalsIgnoreCase("SKIP")) { // se è skip, mostro il menu ed esco
+            else if (input.equalsIgnoreCase("skip")) { // se è skip, mostro il menu ed esco
                 menu();
                 break;
-            } else if (input.equalsIgnoreCase("DONE")) { // se è confirm
+            } else if (input.equalsIgnoreCase("done")) { // se è confirm
                 // Controllo che l'insieme delle città selezionate non sia vuoto, altrimenti lo comunico
                 if (!cities.isEmpty()) {
                     // Imposto l'insieme delle città di interesse per questo utente e lo registro per la callback
@@ -359,11 +359,11 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
         // Richiede il nome dell'hotel da cercare
         System.out.print("Hotel: ");
         if (isCancel(input = stream.nextLine())) return;
-        String hotel = input;
+        String hotel = input.trim();
         // Richiede la città in cui cercare l'hotel indicato
         System.out.print("Città: ");
         if (isCancel(input = stream.nextLine())) return;
-        String city = input;
+        String city = input.trim();
         try {
             // Invio il messaggio di richiesta al server
             searchParsing(sendRequest(Request.getMessage(SEARCH, hotel, city)));
@@ -385,7 +385,7 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
         // Richiede la città in cui effettuare la ricerca
         System.out.print("Città: ");
         if (isCancel(input = stream.nextLine())) return;
-        String city = input;
+        String city = input.trim();
         try {
             // Invio il messaggio di richiesta al server
             searchParsing(sendRequest(Request.getMessage(SEARCHALL, city)));
@@ -532,11 +532,11 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
         // Richiedo il nome dell'hotel da recensire
         System.out.print("Hotel: ");
         if (isCancel(input = stream.nextLine())) return;
-        String hotel = input;
+        String hotel = input.trim();
         // Richiedo il nome della città in cui è situato l'hotel
         System.out.print("Città: ");
         if (isCancel(input = stream.nextLine())) return;
-        String city = input;
+        String city = input.trim();
 
         // Definisco le variabili corrispondenti ai punteggi attribuiti dall'utente
         double score;
@@ -630,11 +630,11 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
         // Richiedo il nome dell'hotel di cui visualizzare le recensioni
         System.out.print("Hotel: ");
         if (isCancel(input = stream.nextLine())) return;
-        String hotel = input;
+        String hotel = input.trim();
         // Richiedo il nome della città in cui è situato l'hotel
         System.out.print("Città: ");
         if (isCancel(input = stream.nextLine())) return;
-        String city = input;
+        String city = input.trim();
 
         try {
             // Invio il messaggio di richiesta al server e gestisco la risposta
@@ -848,7 +848,7 @@ public class HOTELIERCustomerClient extends HOTELIERClient {
      * @param command il comando inserito
      * @return {@code true} se il comando è diverso da {@code cancel}, {@code false} altrimenti
      */
-    private boolean isCancel(String command) { return command.equals(CANCEL.command); }
+    private boolean isCancel(String command) { return command.trim().equals(CANCEL.command); }
 
     /**
      * <p align="justify">

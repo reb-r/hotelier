@@ -15,6 +15,7 @@ import java.util.LinkedList;
 
 import static Client.HOTELIERClient.formatPassword;
 
+
 public class JsonFile {
     static final String HOTEL_FILENAME = "src/Server/config/hotel_database.json";
     static final String USER_FILENAME = "src/Server/config/user_database.json";

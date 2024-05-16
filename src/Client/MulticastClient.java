@@ -8,6 +8,7 @@ import java.net.*;
 
 import static javax.swing.JOptionPane.showMessageDialog;
 
+
 /**
  * <p align="justify">
  *     La classe {@code MulticastClient} estende la classe {@link Thread} e si occupa della gestione dei messaggi
