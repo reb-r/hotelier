@@ -37,6 +37,7 @@ public class GUIHOTELIERCustomerClient extends HOTELIERClient {
         multicast = new MulticastClient(multicast_address, multicast_port, frame);
 
         // Imposto le preferenze per gli elementi indicati della GUI
+        System.setProperty("sun.java2d.uiScale", "1.0");
         FlatMacLightLaf.setup();
         UIManager.put("OptionPane.messageAreaBorder", BorderFactory.createEmptyBorder(5, 5, 5, 5));
         UIManager.put("Frame.arc", 5);
